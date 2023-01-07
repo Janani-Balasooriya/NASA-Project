@@ -11,10 +11,10 @@ function httpAddNewLaunch(req, res) {
     !launch.mission ||
     !launch.rocket ||
     !launch.launchDate ||
-    !launch.destination
+    !launch.target
   ) {
     return res.status(400).json({
-      error: "Mission required launch property",
+      error: "Mission required launch property hey",
     });
   }
 
